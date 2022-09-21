@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  width: 1115px;
+  margin: auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding-top: 60px;
+  font-family: "Barlow", sans-serif;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  margin-left: 60px;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+
+.nav__list {
+  display: none;
+}
+
+.nav__list-item {
+  text-decoration: none;
+}
+
+.user__controls {
+  margin-left: auto;
+}
+
+.user__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login__btn {
+  text-decoration: none;
+  margin-right: 30px;
+  color: white;
+}
+
+.signUp__btn {
+  text-decoration: none;
+  height: 50px;
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: #ff3d54;
+  border-radius: 50px;
+}
+
+.banner__section {
+  padding-top: 80px;
+  background: #ff8f70;
+  background: url(./images/bg-pattern-intro-desktop.svg), -webkit-gradient(linear, left top, right top, color-stop(20%, #ff8f70), color-stop(85%, #ff3d54));
+  background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, #ff8f70 20%, #ff3d54 85%);
+  background-position: center left;
+  height: 600px;
+  border-radius: 0 0 0 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.banner__title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 3.7em;
+  margin-bottom: 10px;
+}
+
+.banner__subtitle {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 45px;
+}
+
+.banner__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner__btn {
+  margin: 0 7.5px;
+  width: 140px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  border: solid white 1px;
+  border-radius: 50px;
+  color: white;
+}
+
+.banner__btn--fill {
+  background-color: white;
+  color: #ff3d54;
+}
+/*# sourceMappingURL=style.css.map */
