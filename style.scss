@@ -18,8 +18,8 @@ $Lightred: #ff3d54;
 
 //Background gradient - body:
 
-$Verydarkgrayblue: hsl(237, 17%, 21%);
-$Verydarkdesaturatedblue: hsl(237, 23%, 32%);
+$Verydarkgrayblue: rgba(44, 45, 63, 1);
+$Verydarkdesaturatedblue: rgba(63, 65, 100, 1);
 
 //Fonts
 
@@ -186,6 +186,7 @@ body {
   background-image: url(./images/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
   background-position: right 70px;
+  margin-bottom: 34px;
 }
 .first__title {
   font-size: 2.4em;
@@ -214,4 +215,59 @@ body {
   font-family: $Overpass;
   letter-spacing: 0.5px;
   line-height: 28px;
+}
+
+.phone__row {
+  height: 400px;
+  background: $Verydarkgrayblue;
+  background: linear-gradient(
+    90deg,
+    $Verydarkgrayblue 20%,
+    $Verydarkdesaturatedblue 85%
+  );
+  border-radius: 0px 85px 0 85px;
+}
+
+.phone__row {
+  .container {
+    display: flex;
+    height: 100%;
+  }
+}
+
+.phone__img {
+  width: 50%;
+  position: relative;
+  img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 43%;
+  }
+}
+.phone__content {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-left: 17px;
+}
+
+.phone__title {
+  color: $White;
+  font-family: $Overpass;
+  font-size: 2.29em;
+  margin-bottom: 10px;
+}
+.phone__text {
+  color: $White;
+  font-family: $Overpass;
+  font-weight: 300;
+  line-height: 1px;
+  letter-spacing: 0.3px;
+  word-spacing: 1.2px;
+  line-height: 28px;
+  position: relative;
+  top: 12px;
 }

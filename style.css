@@ -203,6 +203,7 @@ body::after {
   background-image: url(./images/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
   background-position: right 70px;
+  margin-bottom: 34px;
 }
 
 .first__title {
@@ -233,5 +234,65 @@ body::after {
   font-family: "Overpass", sans-serif;
   letter-spacing: 0.5px;
   line-height: 28px;
+}
+
+.phone__row {
+  height: 400px;
+  background: #2c2d3f;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #2c2d3f), color-stop(85%, #3f4164));
+  background: linear-gradient(90deg, #2c2d3f 20%, #3f4164 85%);
+  border-radius: 0px 85px 0 85px;
+}
+
+.phone__row .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.phone__img {
+  width: 50%;
+  position: relative;
+}
+
+.phone__img img {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 55%;
+  left: 43%;
+}
+
+.phone__content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  padding-left: 17px;
+}
+
+.phone__title {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 2.29em;
+  margin-bottom: 10px;
+}
+
+.phone__text {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  line-height: 1px;
+  letter-spacing: 0.3px;
+  word-spacing: 1.2px;
+  line-height: 28px;
+  position: relative;
+  top: 12px;
 }
 /*# sourceMappingURL=style.css.map */
