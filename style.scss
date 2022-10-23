@@ -182,11 +182,13 @@ body {
 }
 
 .first__row {
-  padding: 150px 0;
+  padding: 185px 0;
   background-image: url(./images/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
-  background-position: right 70px;
-  margin-bottom: 34px;
+  background-position: right -45px bottom 23px;
+  position: relative;
+  z-index: 1000;
+  background-color: white;
 }
 .first__title {
   font-size: 2.4em;
@@ -219,6 +221,7 @@ body {
 
 .phone__row {
   height: 400px;
+  z-index: 500;
   background: $Verydarkgrayblue;
   background: linear-gradient(
     90deg,
@@ -226,8 +229,15 @@ body {
     $Verydarkdesaturatedblue 85%
   );
   border-radius: 0px 85px 0 85px;
-}
+position: relative;
 
+}
+.bg__circles--phone{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  transform: translate(0%,-50%);
+}
 .phone__row {
   .container {
     display: flex;

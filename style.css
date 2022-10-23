@@ -199,11 +199,13 @@ body::after {
 }
 
 .first__row {
-  padding: 150px 0;
+  padding: 185px 0;
   background-image: url(./images/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
-  background-position: right 70px;
-  margin-bottom: 34px;
+  background-position: right -45px bottom 23px;
+  position: relative;
+  z-index: 1000;
+  background-color: white;
 }
 
 .first__title {
@@ -238,10 +240,20 @@ body::after {
 
 .phone__row {
   height: 400px;
+  z-index: 500;
   background: #2c2d3f;
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, #2c2d3f), color-stop(85%, #3f4164));
   background: linear-gradient(90deg, #2c2d3f 20%, #3f4164 85%);
   border-radius: 0px 85px 0 85px;
+  position: relative;
+}
+
+.bg__circles--phone {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 .phone__row .container {
