@@ -129,7 +129,7 @@ body::after {
   background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, #ff8f70 20%, #ff3d54 85%);
   background-position: center left;
   height: 600px;
-  border-radius: 0 0 0 150px;
+  border-radius: 0 0 0 90px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,5 +313,106 @@ body::after {
   line-height: 28px;
   position: relative;
   top: 12px;
+}
+
+.laptop__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 115px 0;
+  margin-bottom: 115px;
+}
+
+.laptop__img-wrapper {
+  position: relative;
+}
+
+.laptop__img-wrapper img {
+  position: absolute;
+  left: 46px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.laptop__content {
+  width: 100%;
+  margin-top: 185px;
+  padding-left: 15px;
+}
+
+footer {
+  height: 360px;
+  border-radius: 0px 85px 0 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #2c2d3f), color-stop(85%, #3f4164));
+  background: linear-gradient(90deg, #2c2d3f 20%, #3f4164 85%);
+  position: relative;
+}
+
+.footer-wrapper {
+  padding: 70px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__column {
+  width: 25%;
+}
+
+.footer__column:nth-child(2) {
+  padding-top: 7px;
+  padding-left: 9px;
+}
+
+.footer__column:nth-child(3) {
+  padding-top: 7px;
+  padding-left: 17px;
+}
+
+.footer__column:nth-child(4) {
+  padding-top: 7px;
+  padding-left: 24px;
+}
+
+.footer__nav-title {
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95em;
+  display: inline-block;
+  margin-bottom: 38px;
+}
+
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__nav-item {
+  text-decoration: none;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.95em;
+  font-family: 100;
+  margin-bottom: 14px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: "Barlow", sans-serif;
+  color: white;
+}
+
+.attribution a {
+  color: #ff3d54;
 }
 /*# sourceMappingURL=style.css.map */
