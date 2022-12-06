@@ -327,6 +327,7 @@ footer {
 }
 .footer-wrapper {
   padding: 70px 3px;
+  padding-bottom: 60px;
   display: flex;
 }
 
@@ -376,83 +377,93 @@ footer {
     color: $Lightred;
   }
 }
-.img__mobile{
+.img__mobile {
   display: none;
 }
-@media screen and (max-width:1024px) {
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     width: 90%;
   }
-/*   .img__mobile{
+  /*   .img__mobile{
     display: block;
   }
   .img__desktop{
     display: none;
   } */
-  .content__text,.phone__text{
-    br{
+  .content__text,
+  .phone__text {
+    br {
       display: none;
     }
   }
-  .editor__row{
-    .container{
+  .editor__row {
+    .container {
       display: flex;
       flex-wrap: wrap;
     }
-    .editor__content{
+    .editor__content {
       order: 2;
       margin-top: 50px;
     }
-    .editor__img--wrapper{
+    .editor__img--wrapper {
       order: 1;
-      img{
+      img {
         width: 100%;
         position: initial;
       }
     }
   }
-  .bg__circles--phone{
+  .bg__circles--phone {
     left: 50%;
     transform: translate(-50%, -50%);
-
   }
-  .bg__circles--wrapper{
+  .bg__circles--wrapper {
     overflow: clip;
   }
-  .phone__img img{
+  .phone__img img {
     transform: translate(-50%, -50%);
     left: 50%;
   }
-  .phone__row{
+  .phone__row {
     height: 600px;
     margin-top: 100px;
-    .container{
-    flex-wrap: wrap;
-  }
-    .phone__img,.phone__content{
+    .container {
+      flex-wrap: wrap;
+    }
+    .phone__img,
+    .phone__content {
       width: 100%;
     }
-    .phone__content{
+    .phone__content {
       padding-top: 100px;
       text-align: center;
       z-index: 1;
     }
   }
-  .phone__title{
+  .phone__title {
     width: 100%;
   }
-  .laptop__row{
+  .laptop__row {
     display: flex;
-      flex-wrap: wrap;
-    .laptop__content{
+    flex-wrap: wrap;
+    .laptop__content {
       width: 100%;
       margin-top: 50px;
     }
-    .laptop__img-wrapper img{
+    .laptop__img-wrapper img {
       position: initial;
       left: initial;
       transform: initial;
       width: 100%;
     }
+  }
+}
+
+.trigger{
+  position: relative;
+  .nav__list{
+    left: 0;
+    display: block;
+    position: absolute;
   }
 }
