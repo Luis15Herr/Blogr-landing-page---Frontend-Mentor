@@ -445,11 +445,54 @@ footer {
     width: 100%;
   }
 }
+.nav__item {
+  transition: ease 0.2s;
+}
+.nav__item:hover .nav__item-ico {
+  transition: ease 0.2s;
+  transform: rotate(180deg);
+}
+.nav__item::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  bottom: -1px;
+  transition: ease 0.2s;
+}
+
 .trigger {
+  transition: ease 0.2s;
   position: relative;
 }
+.trigger .nav__item-ico {
+  transition: ease 0.2s;
+  transform: rotate(180deg);
+}
+.trigger::before {
+  width: 100%;
+  transition: ease 0.2s;
+}
 .trigger .nav__list {
-  left: 0;
   display: block;
   position: absolute;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  top: 0;
+  left: -15px;
+  transform: translateY(40px);
+}
+.trigger .nav__list a {
+  color: hsl(240deg, 10%, 16%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  padding-right: 15px;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.trigger .nav__list a:hover {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
