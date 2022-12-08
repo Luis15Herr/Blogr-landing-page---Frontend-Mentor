@@ -15,3 +15,12 @@ triggers.forEach((item) => {
     last = item;
   });
 });
+
+/* document.addEventListener("click", function (e) {
+  console.log(e.target);
+  if (!e.target.classList.contains("nav__list")) {
+    console.log(e.target.classList, last.classList);
+    last.classList.remove("trigger");
+    last = null;
+  }
+}); */

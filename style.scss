@@ -81,6 +81,7 @@ body {
 }
 .nav {
   margin-left: 70px;
+  display: flex;
 }
 
 .nav__item {
@@ -466,14 +467,12 @@ footer {
       transform: rotate(180deg);
     }
   }
-  &::before {
+  &::after {
     content: "";
-    height: 2px;
-    width: 0;
-    background-color: white;
-    position: absolute;
-    bottom: -1px;
-    transition: ease 0.2s;
+    display: block;
+    border: 1px solid white;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
   }
 }
 .trigger {
@@ -484,9 +483,8 @@ footer {
     transition: ease 0.2s;
     transform: rotate(180deg);
   }
-  &::before {
-    width: 100%;
-    transition: ease 0.2s;
+  &::after {
+    transform: scaleX(1);
   }
   .nav__list {
     display: block;
