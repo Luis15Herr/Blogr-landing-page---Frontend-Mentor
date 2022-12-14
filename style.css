@@ -461,36 +461,40 @@ footer {
   transition: transform 0.25s ease-in-out;
 }
 
-.trigger {
+.active {
   transition: ease 0.2s;
   position: relative;
 }
-.trigger .nav__item-ico {
+.active .nav__item-ico {
   transition: ease 0.2s;
   transform: rotate(180deg);
 }
-.trigger::after {
+.active::after {
   transform: scaleX(1);
 }
-.trigger .nav__list {
+.active .nav__list {
   display: block;
   position: absolute;
-  padding: 20px;
+  padding: 30px 25px;
   background-color: white;
   border-radius: 10px;
   top: 0;
   left: -15px;
-  transform: translateY(40px);
+  transform: translateY(47px);
+  min-width: 170px;
 }
-.trigger .nav__list a {
+.active .nav__list a {
   color: hsl(240deg, 10%, 16%);
   font-family: "Overpass", sans-serif;
   font-weight: 300;
   padding-right: 15px;
   font-size: 0.9em;
   margin-bottom: 5px;
+  width: 100%;
   display: inline-block;
+  transition: ease 0.2s;
 }
-.trigger .nav__list a:hover {
+.active .nav__list a:hover {
   font-weight: 600;
+  transition: ease 0.2s;
 }/*# sourceMappingURL=style.css.map */

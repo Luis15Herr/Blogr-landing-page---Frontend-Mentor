@@ -5,22 +5,21 @@ triggers.forEach((item) => {
   item.addEventListener("click", function () {
     if (last) {
       if (last != item) {
-        last.classList.toggle("trigger");
+        last.classList.toggle("active");
       }
       if (last === item) {
-        last.classList.toggle("trigger");
+        last.classList.toggle("active");
       }
     }
-    item.classList.add("trigger");
+    item.classList.add("active");
     last = item;
   });
 });
 
-/* document.addEventListener("click", function (e) {
-  console.log(e.target);
-  if (!e.target.classList.contains("nav__list")) {
-    console.log(e.target.classList, last.classList);
-    last.classList.remove("trigger");
-    last = null;
-  }
-}); */
+document.addEventListener("click", function (e) {
+  triggers.forEach((item) => {
+    if (e.target != item) {
+      item.classList.remove("active");
+    }
+  });
+});

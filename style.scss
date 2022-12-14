@@ -475,7 +475,7 @@ footer {
     transition: transform 0.25s ease-in-out;
   }
 }
-.trigger {
+.active {
   transition: ease 0.2s;
 
   position: relative;
@@ -489,12 +489,13 @@ footer {
   .nav__list {
     display: block;
     position: absolute;
-    padding: 20px;
+    padding: 30px 25px;
     background-color: white;
     border-radius: 10px;
     top: 0;
     left: -15px;
-    transform: translateY(40px);
+    transform: translateY(47px);
+    min-width: 170px;
 
     a {
       color: $Verydarkblackblue;
@@ -503,9 +504,13 @@ footer {
       padding-right: 15px;
       font-size: 0.9em;
       margin-bottom: 5px;
+      width: 100%;
       display: inline-block;
+      transition: ease 0.2s;
+
       &:hover {
         font-weight: 600;
+        transition: ease 0.2s;
       }
     }
   }
