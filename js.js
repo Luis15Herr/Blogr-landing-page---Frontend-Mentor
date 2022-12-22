@@ -23,3 +23,11 @@ document.addEventListener("click", function (e) {
     }
   });
 });
+
+let mobileTrigger = document.querySelector(".mobile__nav-trigger");
+let mobileNav = document.querySelector(".mobile__nav");
+
+mobileTrigger.addEventListener("click", function () {
+  mobileTrigger.classList.toggle("mobile__nav-trigger--active");
+  mobileNav.classList.toggle("mobile__nav--active");
+});

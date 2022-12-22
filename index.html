@@ -114,23 +114,62 @@
           <a href="#" class="login__btn">Login</a>
           <a href="#" class="signUp__btn">Sign Up</a>
         </div>
-        <button class="mobile__nav-trigger">
-          <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+        <button class="mobile__nav-trigger" onclick="triggerNav()">
+          <svg
+            class="hamburguer"
+            width="32"
+            height="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g fill="#FFF" fill-rule="evenodd">
               <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
             </g>
+          </svg>
+          <svg
+            class="close"
+            width="26"
+            height="26"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z"
+              fill="#FFF"
+              fill-rule="evenodd"
+            />
           </svg>
         </button>
         <div class="mobile__nav">
           <div class="mobile__nav-dropdown">
             <button class="dropdown__title">Product</button>
             <div class="dropdown__content">
-              <a href="#" class="nav__list-item">Overview</a>
-              <a href="#" class="nav__list-item">Pricing</a>
-              <a href="#" class="nav__list-item">Marketplace</a>
-              <a href="#" class="nav__list-item">Features</a>
-              <a href="#" class="nav__list-item">Integrations</a>
+              <a href="#" class="dropdown__item">Overview</a>
+              <a href="#" class="dropdown__item">Pricing</a>
+              <a href="#" class="dropdown__item">Marketplace</a>
+              <a href="#" class="dropdown__item">Features</a>
+              <a href="#" class="dropdown__item">Integrations</a>
             </div>
+          </div>
+          <div class="mobile__nav-dropdown">
+            <button class="dropdown__title">Company</button>
+            <div class="dropdown__content">
+              <a href="#" class="dropdown__item">About</a>
+              <a href="#" class="dropdown__item">Team</a>
+              <a href="#" class="dropdown__item">Blog</a>
+              <a href="#" class="dropdown__item">Careers</a>
+            </div>
+          </div>
+          <div class="mobile__nav-dropdown">
+            <button class="dropdown__title">Connect</button>
+            <div class="dropdown__content">
+              <a href="#" class="dropdown__item">Contact</a>
+              <a href="#" class="dropdown__item">Newsletter</a>
+              <a href="#" class="dropdown__item">LinkedIn</a>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="mobile__user">
+            <a href="" class="mobile__login">Login</a>
+            <a href="" class="mobile__sign">Sign Up</a>
           </div>
         </div>
       </div>
