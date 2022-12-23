@@ -31,3 +31,21 @@ mobileTrigger.addEventListener("click", function () {
   mobileTrigger.classList.toggle("mobile__nav-trigger--active");
   mobileNav.classList.toggle("mobile__nav--active");
 });
+
+let mobileTriggers = document.querySelectorAll(".dropdown__title");
+let lastDropdown = null;
+
+mobileTriggers.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    if (lastDropdown) {
+      lastDropdown.classList.remove("active");
+    }
+    if (lastDropdown === item.parentNode) {
+      item.parentNode.classList.remove("active");
+      lastDropdown = null;
+      return;
+    }
+    item.parentNode.classList.toggle("active");
+    lastDropdown = item.parentNode;
+  });
+});
