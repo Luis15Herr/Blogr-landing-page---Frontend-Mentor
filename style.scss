@@ -598,14 +598,22 @@ footer {
   display: none;
 }
 .mobile__nav {
-  display: none;
+  visibility: hidden;
   position: absolute;
   width: 100%;
   background-color: white;
   border-radius: 5px;
   padding: 30px 20px;
   top: 60px;
+  transform: scale(0);
+  transition: all 0.5s ease-in;
 }
+.mobile__nav--active {
+  visibility: visible;
+  /* display: block; */
+  transform: scale(1);
+}
+
 .separator {
   width: 100%;
   margin: auto;
@@ -643,21 +651,6 @@ footer {
   );
   border-radius: 40px;
   color: white;
-}
-
-.close {
-  display: none;
-}
-.mobile__nav-trigger--active {
-  .hamburguer {
-    display: none;
-  }
-  .close {
-    display: block;
-  }
-}
-.mobile__nav--active {
-  display: block;
 }
 
 .mobile__nav-dropdown.active {
