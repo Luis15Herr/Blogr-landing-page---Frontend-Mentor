@@ -199,6 +199,9 @@ body {
   display: none;
 }
 .mobile__nav {
+  display: none;
+}
+.mobile__nav {
   visibility: hidden;
   position: absolute;
   width: 100%;
@@ -822,6 +825,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .mobile__nav {
+    display: block;
+  }
   .banner__section {
     background: url(./images/bg-pattern-intro-mobile.svg),
       linear-gradient(
