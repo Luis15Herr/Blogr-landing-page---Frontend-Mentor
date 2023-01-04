@@ -13,19 +13,6 @@ body {
   position: relative;
   background-color: #fafafa;
 }
-body::after {
-  content: "";
-  top: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-position: top;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0.5;
-  background-image: url(./design/desktop-design.jpg);
-}
 
 .attribution {
   font-size: 11px;
