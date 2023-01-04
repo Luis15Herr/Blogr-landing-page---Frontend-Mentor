@@ -601,6 +601,7 @@ body {
   font-family: "Overpass", sans-serif;
   letter-spacing: 0.5px;
   line-height: 28px;
+  color: hsl(207deg, 13%, 34%);
 }
 
 .phone__row {
