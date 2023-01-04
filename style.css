@@ -60,6 +60,9 @@ body {
 .nav__item .nav__item-ico {
   margin-left: 3px;
 }
+.nav__item:hover {
+  cursor: pointer;
+}
 .nav__item:hover .nav__item-ico {
   transition: ease 0.2s;
   transform: rotate(180deg);

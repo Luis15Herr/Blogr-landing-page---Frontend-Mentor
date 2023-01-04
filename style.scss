@@ -84,6 +84,7 @@ body {
     margin-left: 3px;
   }
   &:hover {
+    cursor: pointer;
     .nav__item-ico {
       transition: ease 0.2s;
       transform: rotate(180deg);
